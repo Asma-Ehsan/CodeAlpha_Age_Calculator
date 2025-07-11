@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #0a0a0a;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 520px;
+    height: auto;
+    min-height: 100px;
+    margin: 100px auto;
+    background-color: #000;
+    border: 1px solid #0ef;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.3), 0 0 8px rgba(0, 238, 255, 0.3);
+}
+
+.base h4{
+    font-size: 26px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+    font-size: 34px;
+    color: #0ef;
+}
+
+.block{
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.title{
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: #0ef;
+}
+
+input[type=text]{
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #333;
+    padding: 12px;
+    background-color: #111;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+input[type=text]:focus {
+    border-color: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    outline: none;
+}
+
+
+input[type=button]{
+    width: 120px;
+    margin-left: 40%;
+    margin-top: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #0ef;
+    border: 1px solid #0ef;
+    padding: 0.25rem 1em;
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.5em 0 #0ef, 0 0 0.5em 0 #0ef;
+}
+
+input[type=button]:hover{
+    color: #000;
+    background-color: #00f7ff;
+    transition-property: box-shadow;
+    transition-duration: .5s;
+    box-shadow: 0 0 15px #0ef;
+    transform: scale(1.03);
+}
+
+#age{
+    padding: 20px;
+    overflow: hidden;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .block {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+        text-align: center;
+        display: block;
+    }
+
+    input[type=text] {
+        width: 80%;
+    }
+
+    input[type=button] {
+        width: 80%;
+        margin: 30px auto;
+        margin-left: 10%;
+    }
+
+    #age {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
